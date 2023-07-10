@@ -1,11 +1,92 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Our Funky HTML Page</title>
-    <meta name="description" content="Our first page">
-    <meta name="keywords" content="html tutorial template">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My One-Page Website</title>
+ <style>
+  /* CSS styles go here */
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
+
+  .contact-info img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .columns {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .column {
+    flex-basis: 30%;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+</style>
+
+
+</head>
 <body>
-  Content goes here.
+  <header>
+    <div class="contact-info">
+      <img src="your-image.jpg" alt="Your Image">
+      <h1>Your Name</h1>
+      <p>Your Contact Information</p>
+    </div>
+  </header>
+
+  <section class="columns">
+    <div class="column">
+      <img src="image-1.jpg" alt="Image 1">
+      <h2>Column 1</h2>
+      <p>Text for column 1</p>
+    </div>
+    <div class="column">
+      <img src="image-2.jpg" alt="Image 2">
+      <h2>Column 2</h2>
+      <p>Text for column 2</p>
+    </div>
+    <div class="column">
+      <img src="image-3.jpg" alt="Image 3">
+      <h2>Column 3</h2>
+      <p>Text for column 3</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2023 Your Company. All rights reserved.</p>
+  </footer>
 </body>
 </html>
